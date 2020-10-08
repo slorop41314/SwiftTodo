@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4283D386252C1CB0004CAB5A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283D385252C1CB0004CAB5A /* HomeViewModel.swift */; };
+		4283D388252C1DB0004CAB5A /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283D387252C1DB0004CAB5A /* NewTaskView.swift */; };
+		4283D38A252C2AE8004CAB5A /* DateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283D389252C2AE8004CAB5A /* DateOption.swift */; };
 		42EA494C252B1278006337E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA494B252B1278006337E1 /* AppDelegate.swift */; };
 		42EA494E252B1278006337E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA494D252B1278006337E1 /* SceneDelegate.swift */; };
 		42EA4951252B1278006337E1 /* ticktickclone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42EA494F252B1278006337E1 /* ticktickclone.xcdatamodeld */; };
@@ -16,6 +19,11 @@
 		42EA495B252B1279006337E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EA4959252B1279006337E1 /* LaunchScreen.storyboard */; };
 		42EA4966252B1279006337E1 /* ticktickcloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4965252B1279006337E1 /* ticktickcloneTests.swift */; };
 		42EA4971252B1279006337E1 /* ticktickcloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4970252B1279006337E1 /* ticktickcloneUITests.swift */; };
+		42EA4984252B12F0006337E1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4983252B12F0006337E1 /* Task.swift */; };
+		42EA4986252B1310006337E1 /* DummyTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4985252B1310006337E1 /* DummyTodoList.swift */; };
+		42EA4988252B1322006337E1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4987252B1322006337E1 /* Home.swift */; };
+		42EA498A252B1331006337E1 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4989252B1331006337E1 /* Calendar.swift */; };
+		42EA498C252B1341006337E1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA498B252B1341006337E1 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4283D385252C1CB0004CAB5A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4283D387252C1DB0004CAB5A /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		4283D389252C2AE8004CAB5A /* DateOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOption.swift; sourceTree = "<group>"; };
 		42EA4948252B1278006337E1 /* ticktickclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ticktickclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EA494B252B1278006337E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42EA494D252B1278006337E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +62,11 @@
 		42EA496C252B1279006337E1 /* ticktickcloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ticktickcloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EA4970252B1279006337E1 /* ticktickcloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticktickcloneUITests.swift; sourceTree = "<group>"; };
 		42EA4972252B1279006337E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EA4983252B12F0006337E1 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		42EA4985252B1310006337E1 /* DummyTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTodoList.swift; sourceTree = "<group>"; };
+		42EA4987252B1322006337E1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		42EA4989252B1331006337E1 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		42EA498B252B1341006337E1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,10 @@
 		42EA494A252B1278006337E1 /* ticktickclone */ = {
 			isa = PBXGroup;
 			children = (
+				42EA4982252B12D0006337E1 /* Resources */,
+				42EA4981252B12CB006337E1 /* View */,
+				42EA4980252B12C4006337E1 /* ViewModel */,
+				42EA497F252B12BC006337E1 /* Model */,
 				42EA494B252B1278006337E1 /* AppDelegate.swift */,
 				42EA494D252B1278006337E1 /* SceneDelegate.swift */,
 				42EA4952252B1278006337E1 /* ContentView.swift */,
@@ -137,6 +157,42 @@
 				42EA4972252B1279006337E1 /* Info.plist */,
 			);
 			path = ticktickcloneUITests;
+			sourceTree = "<group>";
+		};
+		42EA497F252B12BC006337E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42EA4983252B12F0006337E1 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42EA4980252B12C4006337E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4283D385252C1CB0004CAB5A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		42EA4981252B12CB006337E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42EA4987252B1322006337E1 /* Home.swift */,
+				42EA4989252B1331006337E1 /* Calendar.swift */,
+				42EA498B252B1341006337E1 /* Settings.swift */,
+				4283D387252C1DB0004CAB5A /* NewTaskView.swift */,
+				4283D389252C2AE8004CAB5A /* DateOption.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42EA4982252B12D0006337E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42EA4985252B1310006337E1 /* DummyTodoList.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +326,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4283D388252C1DB0004CAB5A /* NewTaskView.swift in Sources */,
+				42EA4986252B1310006337E1 /* DummyTodoList.swift in Sources */,
+				4283D38A252C2AE8004CAB5A /* DateOption.swift in Sources */,
 				42EA494C252B1278006337E1 /* AppDelegate.swift in Sources */,
 				42EA4951252B1278006337E1 /* ticktickclone.xcdatamodeld in Sources */,
+				4283D386252C1CB0004CAB5A /* HomeViewModel.swift in Sources */,
+				42EA498A252B1331006337E1 /* Calendar.swift in Sources */,
+				42EA4984252B12F0006337E1 /* Task.swift in Sources */,
 				42EA4953252B1278006337E1 /* ContentView.swift in Sources */,
+				42EA498C252B1341006337E1 /* Settings.swift in Sources */,
 				42EA494E252B1278006337E1 /* SceneDelegate.swift in Sources */,
+				42EA4988252B1322006337E1 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

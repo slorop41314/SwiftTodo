@@ -7,10 +7,22 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            Home().tabItem {
+                Image(systemName: "checkmark.square").imageScale(.large)
+            }
+            
+            CalendarScreen().tabItem {
+                Image(systemName: "calendar").imageScale(.large)
+            }
+            
+            Settings().tabItem {
+                Image(systemName: "gear").imageScale(.large)
+            }
+        }
+        
     }
 }
 
