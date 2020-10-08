@@ -11,12 +11,8 @@ import Foundation
 
 struct Home: View {
     let today = Calendar.current.startOfDay(for: Date())
-    
-    @State private var listTodo:[Task] = DUMMY_TODO_LIST
-    @State private var listCompleted:[Task] = []
     @ObservedObject var homeViewModel = HomeViewModel()
     @Environment(\.managedObjectContext) var context
-    
     @FetchRequest(
         entity: TaskData.entity(),
         sortDescriptors: [NSSortDescriptor(key: "title", ascending: true)],
@@ -48,12 +44,12 @@ struct Home: View {
                 List {
                     Section(header : SectionHeader(title: "Today", taskCount: taskResults.count)) {
                         ForEach(taskResults, id: \.self) { list in
-                            TodoListItem(task: list, homeViewModel: homeViewModel)
+                            TaskListItem(task: list, homeViewModel: homeViewModel)
                         }
                     }
                     Section(header : SectionHeader(title: "Completed", taskCount: finishedTaskResult.count), footer: EmptyView()) {
                         ForEach(finishedTaskResult, id: \.self) { list in
-                            TodoListItem(task: list, homeViewModel: homeViewModel)
+                            TaskListItem(task: list, homeViewModel: homeViewModel)
                         }
                     }
                 }
@@ -93,42 +89,6 @@ struct Home_Previews: PreviewProvider {
     }
 }
 
-struct SectionHeader: View {
-    var title: String
-    var taskCount: Int
-    
-    var body: some View {
-        HStack {
-            Text(title)
-            Spacer()
-            HStack {
-                Text("\(taskCount)")
-            }
-        }
-    }
-}
 
-struct TodoListItem: View {
-    var task: TaskData
-    var homeViewModel : HomeViewModel
-    @Environment(\.managedObjectContext) var context
-    
-    var body: some View {
-        HStack {
-            Image(systemName: task.isCompleted ? "checkmark.square" : "square")
-            Text(task.title ?? "")
-            Spacer()
-        }
-        .contentShape(Rectangle())
-        .onTapGesture {
-            self.homeViewModel.toggleItemStatus(item: task, context: context)
-        }.contextMenu {
-            Button(action: {
-                print("abc")
-            }){
-                Text("Move tomorrow")
-            }
-        }
-    }
-}
+
 

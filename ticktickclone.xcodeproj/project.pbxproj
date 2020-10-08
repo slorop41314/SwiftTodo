@@ -24,6 +24,8 @@
 		42EA4988252B1322006337E1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4987252B1322006337E1 /* Home.swift */; };
 		42EA498A252B1331006337E1 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA4989252B1331006337E1 /* Calendar.swift */; };
 		42EA498C252B1341006337E1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA498B252B1341006337E1 /* Settings.swift */; };
+		CE7D8C90252F074E0044C7B7 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D8C8F252F074E0044C7B7 /* SectionHeader.swift */; };
+		CE7D8C95252F07780044C7B7 /* TaskListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D8C94252F07780044C7B7 /* TaskListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		42EA4987252B1322006337E1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		42EA4989252B1331006337E1 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		42EA498B252B1341006337E1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		CE7D8C8F252F074E0044C7B7 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		CE7D8C94252F07780044C7B7 /* TaskListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 				42EA498B252B1341006337E1 /* Settings.swift */,
 				4283D387252C1DB0004CAB5A /* NewTaskView.swift */,
 				4283D389252C2AE8004CAB5A /* DateOption.swift */,
+				CE7D8C8F252F074E0044C7B7 /* SectionHeader.swift */,
+				CE7D8C94252F07780044C7B7 /* TaskListItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,9 +341,11 @@
 				42EA498A252B1331006337E1 /* Calendar.swift in Sources */,
 				42EA4984252B12F0006337E1 /* Task.swift in Sources */,
 				42EA4953252B1278006337E1 /* ContentView.swift in Sources */,
+				CE7D8C95252F07780044C7B7 /* TaskListItem.swift in Sources */,
 				42EA498C252B1341006337E1 /* Settings.swift in Sources */,
 				42EA494E252B1278006337E1 /* SceneDelegate.swift in Sources */,
 				42EA4988252B1322006337E1 /* Home.swift in Sources */,
+				CE7D8C90252F074E0044C7B7 /* SectionHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
