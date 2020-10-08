@@ -1,5 +1,5 @@
 # Swift Todo List App
-Todo list build with Swift Ui and core data
+Todo list build with Swift Ui and core data with MVVM Architecture
 
 ## Apps information
 - This project were made using Swift and Core Data
