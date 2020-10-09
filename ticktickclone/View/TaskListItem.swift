@@ -14,20 +14,28 @@ struct TaskListItem: View {
     @Environment(\.managedObjectContext) var context
     
     var body: some View {
-        HStack {
-            Image(systemName: task.isCompleted ? "checkmark.square" : "square")
-            Text(task.title ?? "")
-            Spacer()
-        }
-        .contentShape(Rectangle())
-        .onTapGesture {
-            self.homeViewModel.toggleItemStatus(item: task, context: context)
-        }.contextMenu {
-            Button(action: {
-                print("abc")
-            }){
-                Text("Move tomorrow")
+        ZStack {
+            NavigationLink(destination: TaskDetail(homeViewModel: homeViewModel, task: task)){
+                EmptyView()
+            }.buttonStyle(PlainButtonStyle())
+            HStack {
+                Image(systemName: task.isCompleted ? "checkmark.square" : "square").resizable().frame(width: 20, height: 20)
+                    .onTapGesture {
+                        self.homeViewModel.toggleItemStatus(item: task, context: context)
+                        
+                    }
+                Text(task.title ?? "")
+                Spacer()
+            }
+            .contentShape(Rectangle())
+            .contextMenu {
+                Button(action: {
+                    self.homeViewModel.updateTask(item: task, context: context, taskDue: homeViewModel.tomorrow, title: nil, desc: nil)
+                }){
+                    Text("Move tomorrow")
+                }
             }
         }
+        
     }
 }

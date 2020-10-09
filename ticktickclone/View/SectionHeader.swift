@@ -8,7 +8,6 @@
 
 import SwiftUI
 
-
 struct SectionHeader: View {
     var title: String
     var taskCount: Int
