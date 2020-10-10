@@ -18,9 +18,18 @@ class HomeViewModel: ObservableObject {
     @Published var title = ""
     @Published var description = ""
     @Published var date = Date()
+    @Published var isCompleted = false
     @Published var showedListDate = Date()
     
+    let calendar = Calendar.current
+    let today: Date
+    let tomorrow: Date
     
+    init() {
+        self.today = Date()
+        self.tomorrow = calendar.date(byAdding: .day, value: 1, to: today)!
+    }
+   
     
     // New data sheet
     @Published var isNewData = false
@@ -56,4 +65,19 @@ class HomeViewModel: ObservableObject {
         try! context.save()
     }
     
+    func updateTask(item : TaskData, context: NSManagedObjectContext, taskDue: Date?, title : String?, desc : String?) {
+        if let date = taskDue {
+            item.date =  date
+        }
+        if let title = title {
+            item.title = title
+        }
+        if let descr = desc {
+            item.desc = descr
+        }
+        self.title=""
+        description=""
+        date=Date()
+        try! context.save()
+    }
 }
